@@ -149,9 +149,12 @@ public class VoteRecorder {
 
         System.out.println("Type yes if you are happy with your vote");
         String choice = scanner.next();
-        recordVotes();
-        if (choice.equalsIgnoreCase("Yes"))
+        if (choice.equalsIgnoreCase("Yes")){
+
+            recordVotes();
             return true;
+
+        }
         else if (choice.equalsIgnoreCase("No"))
             return false;
         else
